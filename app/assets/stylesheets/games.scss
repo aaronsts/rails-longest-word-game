@@ -8,12 +8,37 @@
 }
 body {
   padding: 10px;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #f8f8f8;
 
   h1 {
     padding: 1em;
+  }
+}
+
+p {
+  padding: 5px;
+  font-size: 1.3em;
+  em {
+    padding: 4px;
+    font-style: normal;
+    font-weight: bold;
+    color: rgb(206, 80, 206);
+  }
+}
+
+a {
+  text-decoration: none;
+  padding: 1em;
+  margin: 1em;
+  color: #f8f8f8;
+  background-color: #191919;
+  border-radius: 5px;
+  &:hover {
+    background-color: #444444;
   }
 }
 
@@ -31,6 +56,40 @@ body {
       border: 1px solid #191919;
       color: #f8f8f8;
       background-color: #191919;
+      cursor: pointer;
+    }
+  }
+}
+
+form {
+  div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .input-field {
+    padding: 10px;
+    margin-top: 1em;
+
+    border: 1px solid rgb(218, 218, 218);
+    border-radius: 6px;
+    box-shadow: 0px 0px 5px rgba(25, 25, 25, 0.1);
+  }
+  .btn {
+    padding: 10px;
+    margin-top: 1em;
+
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    background-color: #f8f8f8;
+    color: rgb(206, 80, 206);
+    border: 2px solid rgb(206, 80, 206);
+    border-radius: 6px;
+    &:hover {
+      color: #f8f8f8;
+      border: 2px solid rgb(206, 80, 206);
+      background-color: rgb(206, 80, 206);
       cursor: pointer;
     }
   }

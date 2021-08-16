@@ -6,8 +6,10 @@
 </div>
 <form action="score">
 <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
-<input name="lettersArray" type="hidden" value=<%@letters%> />
-<label for="word">What is the longest word you can find?</label>
-<input type="text" name="word">
-<input type="submit" value="Answer">
+<%= hidden_field_tag :lettersArray, @letters %>
+<label for="word">What is the longest word you can find?</label> <br>
+<div>
+<input type="text" name="word" class="input-field">
+<input type="submit" value="Answer" class="btn">
+</div>
 </form>
